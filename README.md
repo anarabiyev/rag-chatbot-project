@@ -117,6 +117,7 @@ The set is organised so that every route of the graph is exercised, and each rou
 
 The chat route (questions about the conversation) and follow-ups are covered by unit tests with a stubbed LLM, not by this set. Each question has a label for the expected route and keywords the answer must contain, and decisions also have an expected verdict.
 
+
 | Measure | Result |
 |---|---|
 | Routed to the right path | 19 of 20 |
@@ -241,7 +242,7 @@ python load_test.py a         load test with the dummy LLM (b: real model, c: es
 
 ## What I would do without the time and resource limits
 
-The choices above were shaped by a few weeks of work and one ordinary machine. With more of both, these are the changes I would make, in rough order of value.
+The choices above were shaped by a week of work and one ordinary machine. With more of both, these are the changes I would make, in rough order of value.
 
 1. **A bigger, production-level LLM.** A larger model (a hosted frontier model or a 30B+ open model on a GPU) would remove most of the weak spots at once: it would classify decision questions without the regular expression, read financial tables more reliably, keep citations in every sub-answer, and generate many times faster. Latency would drop from minutes to seconds, and the load test could then run the full 50 to 200 queries against the real model.
 2. **Compare more designs, with bigger evaluation sets.** I tested two chunkers and two embedding models on 20 questions. I would add hybrid search (keyword plus vector), a cross-encoder reranker, more embedding models, other chunk sizes, and a self-check step where the model rechecks its own answer. I would build 100+ questions, labelled by more than one person, so that small differences become measurable and the labels are not only my own.
