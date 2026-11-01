@@ -1,6 +1,6 @@
 # Company decision-support agent
 
-A chat assistant for new employees. You can ask it what the company's documents say, what is happening in the market right now, or whether something you are planning is allowed and how risky it is. It is built with LangGraph and runs fully on your own machine: Gemma through LM Studio, local embeddings, a local vector store. No paid APIs.
+A RAG-based chat assistant built for employees. It helps the employees to quickly and fully check their ideas/questions with the company internal documents, past projects, policy, risk factors and also with the external data that can be about competitors, market that feeds from news or social media. It is built with LangGraph and runs fully on your own machine: a local Gemma LLM through LM Studio, local embeddings, a local vector store. 
 
 **The company in this project is an example.** The project uses Arla Foods (https://www.arla.com/), a farmer-owned dairy cooperative, because its governing documents are public. The agent itself is not specific to Arla. It can be used for any company, provided you give it that company's internal documents (PDFs and a small metadata file) and name its competitors for the news tool. In the rest of this document "the company" means whichever company the documents belong to; in this repository that is Arla.
 
