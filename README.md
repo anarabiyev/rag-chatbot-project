@@ -188,6 +188,34 @@ python ingest.py            # builds the search index, a few minutes
 streamlit run app.py
 ```
 
+### Changing the LLM
+
+The model is chosen with three environment variables. No code change is needed.
+
+| Variable | What it does | Default |
+|---|---|---|
+| `LLM_MODEL` | The model name. It must match the name LM Studio shows for the loaded model. | `google/gemma-4-e4b` |
+| `LLM_BASE_URL` | The address of the LLM server. | `http://localhost:1234/v1` (in Docker `http://host.docker.internal:1234/v1`) |
+| `LLM_BACKEND` | Set to `dummy` to use canned replies and no real LLM. | unset |
+
+To use a different LM Studio model, load it in LM Studio, start the server, and set `LLM_MODEL` to its name. Any other server with an OpenAI-compatible API also works if you set `LLM_BASE_URL` as well.
+
+With Docker (the variables go in front of the command):
+
+```
+LLM_MODEL=<name in LM Studio> docker compose up
+LLM_BACKEND=dummy docker compose up --build
+```
+
+Without Docker, in PowerShell (use `export VAR=value` on Linux or macOS):
+
+```
+$env:LLM_MODEL = "<name in LM Studio>"
+streamlit run app.py
+```
+
+For the dummy LLM, use `$env:LLM_BACKEND = "dummy"`. The defaults are in `rag/llm.py` and `docker-compose.yml`.
+
 ### Using another company
 
 Put the company's PDFs in `corpus/`, describe each one in `corpus/manifest.csv` (id, file, title, document type, year, url), rebuild the index with `python ingest.py`, and change the company and competitor names in the news settings. The graph, the RAG subgraph and the policy and risk tools do not change.
