@@ -1,0 +1,8 @@
+# environment and caches
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# built by `python ingest.py`
+chroma_db/

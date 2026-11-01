@@ -1,0 +1,95 @@
+Could not reach the Hub ([WinError 10054] An existing connection was forcibly closed by the remote host). Using cached commit hash for 'BAAI/bge-small-en-v1.5'.
+embedding model: BAAI/bge-small-en-v1.5
+strategy   mode    hit@1  hit@3  hit@5    mrr   kw@5
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3431.85it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+recursive  none     0.30   0.50   0.70   0.44   0.55     35 ms/query
+    policy     n=10  hit@5=0.80  mrr=0.62
+    multi_year n= 4  hit@5=1.00  mrr=0.33
+    numeric    n= 6  hit@5=0.33  mrr=0.20
+  miss [policy] What does Arla do if it discovers child labour? | year=None type=None | top: arla-foods-modern-slavery-statemen p.4
+  miss [policy] Which three ingredients does Arla's responsible sourcing p | year=None type=None | top: responsible-sourcing.pdf p.3
+  miss [numeric] What was Arla's revenue in 2024? | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.23
+  miss [numeric] What was Arla's net profit in 2024 and what share of reven | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.23
+  miss [numeric] How many milk-producing farmers owned Arla according to th | year=None type=None | top: arla-foods-modern-slavery-statemen p.1
+  miss [numeric] What was Arla's performance price in the first half of 202 | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.21
+recursive  query    0.40   0.50   0.60   0.46   0.60     10 ms/query
+    policy     n=10  hit@5=0.90  mrr=0.77
+    multi_year n= 4  hit@5=0.50  mrr=0.15
+    numeric    n= 6  hit@5=0.17  mrr=0.17
+  miss [policy] What share of Arla's group revenue does the UK contribute? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.79
+  miss [multi_year] What was the performance price for 2020 as reported in the | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.21
+  miss [multi_year] How many dairy farmers owned Arla according to the 2021 an | year=None type=None | top: arla_consolidated_annual_report_20 p.12
+  miss [numeric] What was Arla's revenue in 2024? | year=None type=None | top: uk_arla_consolidated_annual_report p.75
+  miss [numeric] What was Arla's net profit in 2024 and what share of reven | year=None type=None | top: arla_annual-report-2023_uk.pdf p.104
+  miss [numeric] How many milk-producing farmers owned Arla according to th | year=None type=None | top: arla_annual-report-2023_uk.pdf p.10
+  miss [numeric] What was Arla's revenue in 2025? | year=None type=None | top: uk_arla_consolidated_annual_report p.75
+  miss [numeric] What was Arla's performance price in the first half of 202 | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.21
+recursive  year     0.55   0.80   0.85   0.67   0.70     78 ms/query
+    policy     n=10  hit@5=0.80  mrr=0.62
+    multi_year n= 4  hit@5=1.00  mrr=1.00
+    numeric    n= 6  hit@5=0.83  mrr=0.53
+  miss [policy] What does Arla do if it discovers child labour? | year=None type=None | top: arla-foods-modern-slavery-statemen p.4
+  miss [policy] Which three ingredients does Arla's responsible sourcing p | year=None type=None | top: responsible-sourcing.pdf p.3
+  miss [numeric] What was Arla's net profit in 2024 and what share of reven | year=2024 type=None | top: arla-annual-report-2024-uk2.pdf p.23
+recursive  qyear    0.55   0.80   0.90   0.70   0.80     14 ms/query
+    policy     n=10  hit@5=0.90  mrr=0.77
+    multi_year n= 4  hit@5=1.00  mrr=0.62
+    numeric    n= 6  hit@5=0.83  mrr=0.62
+  miss [policy] What share of Arla's group revenue does the UK contribute? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.79
+  miss [numeric] What was Arla's revenue in 2025? | year=2025 type=None | top: arla-ar25-abridged-uk_web.pdf p.26
+recursive  full     0.50   0.70   0.75   0.61   0.65     27 ms/query
+    policy     n=10  hit@5=0.60  mrr=0.60
+    multi_year n= 4  hit@5=1.00  mrr=0.62
+    numeric    n= 6  hit@5=0.83  mrr=0.62
+  miss [policy] Above what value must individual gifts be recorded on the  | year=None type=code_of_conduct | top: arla-code-of-conduct_uk_final_orig p.10
+  miss [policy] What share of Arla's group revenue does the UK contribute? | year=None type=annual_report | top: arla-annual-report-2022_uk.pdf p.79
+  miss [policy] What does Arla do if it discovers child labour? | year=None type=modern_slavery | top: arla-foods-modern-slavery-statemen p.4
+  miss [policy] What complaints procedure does Arla Foods Deutschland desc | year=None type=responsible_sourcing | top: responsible-sourcing.pdf p.4
+  miss [numeric] What was Arla's revenue in 2025? | year=2025 type=annual_report | top: arla-ar25-abridged-uk_web.pdf p.26
+parent     none     0.50   0.60   0.60   0.54   0.60     18 ms/query
+    policy     n=10  hit@5=0.70  mrr=0.70
+    multi_year n= 4  hit@5=0.50  mrr=0.33
+    numeric    n= 6  hit@5=0.50  mrr=0.42
+  miss [policy] Does Arla make or accept facilitation payments? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.86
+  miss [policy] What does Arla do if it discovers child labour? | year=None type=None | top: arla-foods-modern-slavery-statemen p.4
+  miss [policy] Which three ingredients does Arla's responsible sourcing p | year=None type=None | top: responsible-sourcing.pdf p.3
+  miss [multi_year] How many colleagues did Arla employ according to the 2022  | year=None type=None | top: arla-foods-modern-slavery-statemen p.1
+  miss [multi_year] What was the performance price for 2020 as reported in the | year=None type=None | top: arla_consolidated_annual_report_20 p.39
+  miss [numeric] What was Arla's revenue in 2024? | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.22
+  miss [numeric] How many milk-producing farmers owned Arla according to th | year=None type=None | top: arla_annual-report-2023_uk.pdf p.10
+  miss [numeric] What was Arla's revenue in 2025? | year=None type=None | top: arla-annual-report-2024-uk2.pdf p.22
+parent     query    0.35   0.60   0.60   0.47   0.60     10 ms/query
+    policy     n=10  hit@5=0.80  mrr=0.68
+    multi_year n= 4  hit@5=0.25  mrr=0.25
+    numeric    n= 6  hit@5=0.50  mrr=0.25
+  miss [policy] Does Arla make or accept facilitation payments? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.145
+  miss [policy] What share of Arla's group revenue does the UK contribute? | year=None type=None | top: uk_arla_consolidated_annual_report p.94
+  miss [multi_year] How many colleagues did Arla employ according to the 2022  | year=None type=None | top: arla-foods-modern-slavery-statemen p.1
+  miss [multi_year] What was the performance price for 2020 as reported in the | year=None type=None | top: arla-ar25-abridged-uk_web.pdf p.27
+  miss [multi_year] How many dairy farmers owned Arla according to the 2021 an | year=None type=None | top: arla-ar25-abridged-uk_web.pdf p.5
+  miss [numeric] How many milk-producing farmers owned Arla according to th | year=None type=None | top: arla-ar25-abridged-uk_web.pdf p.5
+  miss [numeric] What was Arla's revenue in 2025? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.80
+  miss [numeric] What was Arla's performance price in the first half of 202 | year=None type=None | top: arla-ar25-abridged-uk_web.pdf p.27
+parent     year     0.65   0.80   0.85   0.72   0.80     20 ms/query
+    policy     n=10  hit@5=0.70  mrr=0.70
+    multi_year n= 4  hit@5=1.00  mrr=0.88
+    numeric    n= 6  hit@5=1.00  mrr=0.65
+  miss [policy] Does Arla make or accept facilitation payments? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.86
+  miss [policy] What does Arla do if it discovers child labour? | year=None type=None | top: arla-foods-modern-slavery-statemen p.4
+  miss [policy] Which three ingredients does Arla's responsible sourcing p | year=None type=None | top: responsible-sourcing.pdf p.3
+parent     qyear    0.65   0.90   0.90   0.76   0.85     15 ms/query
+    policy     n=10  hit@5=0.80  mrr=0.68
+    multi_year n= 4  hit@5=1.00  mrr=0.71
+    numeric    n= 6  hit@5=1.00  mrr=0.92
+  miss [policy] Does Arla make or accept facilitation payments? | year=None type=None | top: arla-annual-report-2022_uk.pdf p.145
+  miss [policy] What share of Arla's group revenue does the UK contribute? | year=None type=None | top: uk_arla_consolidated_annual_report p.94
+parent     full     0.55   0.75   0.75   0.64   0.70     28 ms/query
+    policy     n=10  hit@5=0.50  mrr=0.45
+    multi_year n= 4  hit@5=1.00  mrr=0.71
+    numeric    n= 6  hit@5=1.00  mrr=0.92
+  miss [policy] Above what value must individual gifts be recorded on the  | year=None type=code_of_conduct | top: arla-code-of-conduct_uk_final_orig p.10
+  miss [policy] Does Arla make or accept facilitation payments? | year=None type=anti_bribery | top: anti-bribery-policy---external-002 p.5
+  miss [policy] What share of Arla's group revenue does the UK contribute? | year=None type=annual_report | top: uk_arla_consolidated_annual_report p.94
+  miss [policy] What does Arla do if it discovers child labour? | year=None type=modern_slavery | top: arla-foods-modern-slavery-statemen p.4
+  miss [policy] What complaints procedure does Arla Foods Deutschland desc | year=None type=responsible_sourcing | top: responsible-sourcing.pdf p.4

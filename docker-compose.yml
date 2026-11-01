@@ -1,0 +1,19 @@
+# Start the app:           docker compose up --build        then open http://localhost:8501
+# Run without an LLM:      LLM_BACKEND=dummy docker compose up --build
+# Use another LLM server:  LLM_BASE_URL=http://host.docker.internal:8000/v1 LLM_MODEL=<name> docker compose up
+#
+# The LLM is not part of the container: start LM Studio on the host, load the model and start its server.
+services:
+  app:
+    build: .
+    image: arla-decision-agent
+    ports:
+      - "${APP_PORT:-8501}:8501"   # change the left side if 8501 is taken: APP_PORT=8502 docker compose up
+    environment:
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://host.docker.internal:1234/v1}
+      LLM_MODEL: ${LLM_MODEL:-google/gemma-4-e4b}
+      LLM_BACKEND: ${LLM_BACKEND:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # needed on Linux; Docker Desktop already provides the name
+    volumes:
+      - ./eval:/app/eval   # evaluation and load-test results written inside the container stay on the host

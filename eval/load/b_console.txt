@@ -1,0 +1,47 @@
+0 already done, 12 to run, budget 40 min
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/BAAI/bge-small-en-v1.5: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'BAAI/bge-small-en-v1.5'.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4199.28it/s]
+cold start: graph built in 5.1s, first query done after 70.5s in total
+model warm-up call: 0.6s
+lookup           62.3s retries=0 llm_calls=3 Above what value must individual gifts be recorded on the gi 
+market          206.7s retries=0 llm_calls=6 What is the latest news about Arla? 
+decision        166.0s retries=0 llm_calls=4 Should we accept a EUR 300 gift voucher from a supplier duri 
+out_of_scope     54.6s retries=0 llm_calls=1 What is the best pizza topping? 
+lookup           81.0s retries=0 llm_calls=3 How much notice must a member give to resign from the cooper 
+market          142.1s retries=0 llm_calls=4 How are Lactalis and Danone doing in the market right now? 
+decision        115.5s retries=0 llm_calls=4 Can we pay a small facilitation payment to speed up customs  
+out_of_scope     24.5s retries=0 llm_calls=1 Write me a poem about the sea 
+lookup          128.8s retries=1 llm_calls=5 How many colleagues did Arla employ according to the 2023 mo 
+market          136.5s retries=0 llm_calls=4 What is currently happening with Arla's protein pudding? 
+decision        154.6s retries=0 llm_calls=6 Should we move the company headquarters to another Danish ci 
+lookup          237.8s retries=1 llm_calls=11 Compare Arla's revenue in 2023 and 2024. 
+
+=== B: real model, concurrency 1 ===
+12 queries, 0 errors, wall time 1510.5s, throughput 0.5 queries/min
+
+route            n   mean s    p50 s    p95 s    max s  retry %  routed ok
+lookup           4   127.48    81.00   237.84   237.84      50%       100%
+market           3   161.79   142.12   206.74   206.74       0%       100%
+decision         3   145.33   154.56   165.98   165.98       0%       100%
+out_of_scope     2    39.58    24.53    54.63    54.63       0%       100%
+all             12   125.87   128.76   237.84   237.84      17%       100%
+
+Share of node time (summed over queries, parallel branches overlap):
+  rag             982.1s  60.2%
+  synthesize      300.3s  18.4%
+  planner         254.0s  15.6%
+  policy           96.0s   5.9%
+  web               0.2s   0.0%
+  critic            0.0s   0.0%
+  risk              0.0s   0.0%
+  gather            0.0s   0.0%
+  retry             0.0s   0.0%
+
+LLM calls: 52, 1631.4s = 108.0% of total query time
+  task       calls   seconds  tokens in  tokens out  s/call  out tok/s
+  answer        13     548.2      23293        8445    42.2       15.4
+  rewrite       16     340.2       1428        5633    21.3       16.6
+  summary        8     300.2       7891        4725    37.5       15.7
+  plan           9     254.0       2707        4143    28.2       16.3
+  policy         3      95.8       3274        1518    31.9       15.8
+  grade          3      92.9       5383        1556    31.0       16.7

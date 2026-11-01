@@ -1,0 +1,177 @@
+{
+  "weights": {
+    "policy": 0.4,
+    "regulatory": 0.2,
+    "external": 0.2,
+    "evidence": 0.2
+  },
+  "levels": {
+    "medium": 35,
+    "high": 65
+  },
+  "policy_scores": {
+    "conflict": 90,
+    "no_precedent": 50,
+    "consistent": 10
+  },
+  "regulatory_areas": {
+    "bribery": {
+      "weight": 40,
+      "doc_types": [
+        "anti_bribery"
+      ],
+      "keywords": [
+        "bribe",
+        "gift",
+        "hospitality",
+        "kickback",
+        "facilitation",
+        "voucher",
+        "corruption",
+        "tender"
+      ]
+    },
+    "human_rights": {
+      "weight": 35,
+      "doc_types": [
+        "human_rights",
+        "supplier_code",
+        "modern_slavery",
+        "policy_statement"
+      ],
+      "keywords": [
+        "child labour",
+        "forced labour",
+        "human rights",
+        "working hours",
+        "recruitment fee",
+        "migrant",
+        "modern slavery",
+        "night shift"
+      ]
+    },
+    "sanctions": {
+      "weight": 40,
+      "doc_types": [],
+      "keywords": [
+        "sanction",
+        "embargo",
+        "watch list"
+      ]
+    },
+    "food_safety": {
+      "weight": 30,
+      "doc_types": [],
+      "keywords": [
+        "recall",
+        "contamination",
+        "allergen",
+        "food safety",
+        "glass",
+        "antibiotic"
+      ]
+    },
+    "competition": {
+      "weight": 25,
+      "doc_types": [],
+      "keywords": [
+        "price fixing",
+        "cartel",
+        "competitor",
+        "antitrust",
+        "exclusive"
+      ]
+    },
+    "sourcing": {
+      "weight": 25,
+      "doc_types": [
+        "responsible_sourcing"
+      ],
+      "keywords": [
+        "palm oil",
+        "soy",
+        "cocoa",
+        "deforestation",
+        "certified"
+      ]
+    },
+    "tax": {
+      "weight": 20,
+      "doc_types": [
+        "tax_strategy"
+      ],
+      "keywords": [
+        "tax",
+        "transfer pricing"
+      ]
+    },
+    "data_privacy": {
+      "weight": 20,
+      "doc_types": [],
+      "keywords": [
+        "personal data",
+        "gdpr",
+        "data privacy",
+        "customer data"
+      ]
+    }
+  },
+  "evidence": {
+    "weak_distance": 0.3,
+    "min_chunks": 3,
+    "penalties": {
+      "distance": 30,
+      "few_chunks": 20,
+      "not_relevant": 30,
+      "retried": 10
+    }
+  },
+  "external": {
+    "negative_weight": 0.4,
+    "event_weight": 0.6,
+    "arla_share": 0.7,
+    "events_cap": 3,
+    "missing_score": 50,
+    "event_areas": {
+      "recall": [
+        "food_safety"
+      ],
+      "contamination": [
+        "food_safety"
+      ],
+      "labour": [
+        "human_rights"
+      ],
+      "legal": [
+        "bribery",
+        "competition",
+        "tax",
+        "sanctions"
+      ],
+      "price_cut": [
+        "competition"
+      ],
+      "disruption": []
+    }
+  },
+  "hard_floor": {
+    "doc_types": [
+      "anti_bribery",
+      "human_rights",
+      "supplier_code",
+      "modern_slavery"
+    ],
+    "level": "MEDIUM"
+  },
+  "needs_more_evidence": {
+    "evidence_score": 50
+  },
+  "mitigations": {
+    "policy_conflict": "Do not proceed until Legal and Compliance have reviewed the conflicting policy.",
+    "policy_no_precedent": "No internal precedent found: ask Legal or the policy owner for guidance.",
+    "regulatory": "Check the regulatory requirements for the flagged areas with Legal before proceeding.",
+    "external": "Brief Communications and prepare a response plan, the news environment is sensitive.",
+    "evidence": "Evidence is thin: gather more internal precedents or documents before deciding."
+  },
+  "driver_min_score": 25
+}

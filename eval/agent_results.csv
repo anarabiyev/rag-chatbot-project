@@ -1,0 +1,411 @@
+question,intent,got_intent,intent_ok,answer_ok,verdict,got_verdict,verdict_ok,verified,seconds,llm_calls,answer
+Above what value must individual gifts be recorded on the gifts and hospitality register?,lookup,lookup,True,True,,,True,True,59.9,3,"Individual gifts must be recorded on the gifts and hospitality register if their value is in excess of €150 [1].
+
+> Evidence: ""• all individual gifts, whether offered, given or accepted, where the value is in excess of €150;"" [1]
+
+**Sources**
+[1] Anti Bribery Policy External 002, p.6 (2025)
+[2][4] Anti Bribery Policy External 002, p.4 (2025)
+[3] Anti Bribery Policy External 002, p.7 (2025)
+[5] Anti Bribery Policy External 002, p.5 (2025)"
+Should we accept a EUR 300 gift voucher from a supplier during an ongoing tender?,decision,decision,True,True,conflict,conflict,True,True,134.2,4,"## Summary
+No, you should not accept a EUR 300 gift voucher from a supplier during an ongoing tender process. Our policies strictly prohibit making or accepting any offers to or from representatives of an organization during business negotiations or a tender process. Accepting such gifts could be problematic because the exchange might be perceived as intended to influence the outcome of the negotiation, which constitutes a conflict under our Anti Bribery Policy.
+
+## Policy check
+Verdict: **CONFLICT**. The policies strictly prohibit making or accepting any offers to or from representatives of an organization during a tender process or ongoing business negotiations.
+
+Cited: Anti Bribery Policy External 002, p.5
+
+## Risk assessment
+**MEDIUM** (score 45.5/100; policy 90, regulatory 40, external 7, evidence 0)
+
+- Policy verdict: conflict (Anti Bribery Policy External 002 p.5)
+- Regulatory exposure: bribery
+
+Suggested mitigations:
+- Do not proceed until Legal and Compliance have reviewed the conflicting policy.
+- Check the regulatory requirements for the flagged areas with Legal before proceeding.
+
+## Internal evidence
+Accepting a gift or hospitality from a supplier during an ongoing tender process could be problematic, as the context advises caution if such an exchange could be perceived as intended to influence the outcome of the negotiation or tender [4].
+
+> Evidence: ""offer, give or promise to give or accept a gift or hospitality during any commercial negotiations or tender process, if this could be perceived as intended or likely to influence the outcome;"" [4]
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+- Lactalis: 22 stories, average sentiment +0.12, 14% negative, 2 event stories
+- FrieslandCampina: 26 stories, average sentiment +0.37, 8% negative, 0 event stories
+- Danone: 70 stories, average sentiment +0.35, 9% negative, 0 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Anti Bribery Policy External 002, p.4 (2025)
+[2] Anti Bribery Policy External 002, p.8 (2025)
+[3] Arla Annual Report 2024 Uk2, p.88 (2024)
+[4] Anti Bribery Policy External 002, p.3 (2025)
+[5] Anti Bribery Policy External 002, p.6 (2025)"
+Can we pay a small facilitation payment to speed up customs clearance?,decision,decision,True,True,conflict,conflict,True,False,256.7,8,"## Summary
+No, Arla employees cannot pay facilitation payments to speed up customs clearance. Our policy explicitly states that Arla does not make, and will not accept, facilitation payments or kickbacks of any kind. Employees must resist engaging in activities related to these types of payments. Violating this rule constitutes a conflict with our Anti-Bribery Policy, which carries a medium risk level due to regulatory exposure concerning bribery.
+
+## Policy check
+Verdict: **CONFLICT**. The policy explicitly states that Arla does not make, and will not accept, facilitation payments or kickbacks of any kind.
+
+Cited: Anti Bribery Policy External 002, p.4
+
+## Risk assessment
+**MEDIUM** (score 45.5/100; policy 90, regulatory 40, external 7, evidence 0)
+
+- Policy verdict: conflict (Anti Bribery Policy External 002 p.4)
+- Regulatory exposure: bribery
+
+Suggested mitigations:
+- Do not proceed until Legal and Compliance have reviewed the conflicting policy.
+- Check the regulatory requirements for the flagged areas with Legal before proceeding.
+
+## Internal evidence
+The context states that employees should resist engaging in activities related to facilitation payments.
+
+Figure reference: Not applicable.
+
+> Evidence: ""We can and will help you resist any pressure to engage in any activity relating to facilitation payments or kickbacks."" [1]
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+- Lactalis: 22 stories, average sentiment +0.12, 14% negative, 2 event stories
+- FrieslandCampina: 26 stories, average sentiment +0.37, 8% negative, 0 event stories
+- Danone: 70 stories, average sentiment +0.35, 9% negative, 0 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Anti Bribery Policy External 002, p.4 (2025)
+[2] Arla Foods Modern Slavery Statement 2021, p.4 (2021)
+[3] Arla Foods Modern Slavery Statement 2023, p.4 (2023)
+[4] Arla Hy26 Uk, p.19 (2026)
+[5] Arla Hy26 Uk, p.30 (2026)
+[6][8] Anti Bribery Policy External 002, p.5 (2025)
+[7] Arla Annual Report 2023 Uk, p.85 (2023)
+
+> Warning: this answer could not be fully verified: answer has no citations"
+Should we take a customer to a normal business lunch costing EUR 80 per head?,decision,decision,True,True,consistent,consistent,True,True,152.7,5,"## Summary
+Yes, taking a customer to a normal business lunch costing EUR 80 per head is permissible according to company policy. This cost falls below the €150 threshold mentioned in the guidelines, which explicitly exempts normal business lunches or evening meals with a value less than this amount from certain reporting requirements. Therefore, the action is deemed consistent with policy and maintains a LOW risk level regarding regulatory exposure for bribery.
+
+## Policy check
+Verdict: **CONSISTENT**. Passage [1] explicitly exempts normal business lunches or evening meals with a value of less than €150 per head from certain reporting requirements.
+
+Cited: Anti Bribery Policy External 002, p.6
+
+## Risk assessment
+**LOW** (score 13.5/100; policy 10, regulatory 40, external 7, evidence 0)
+
+- Regulatory exposure: bribery
+
+Suggested mitigations:
+- Check the regulatory requirements for the flagged areas with Legal before proceeding.
+
+## Internal evidence
+Yes, according to the policy, taking a customer to a normal business lunch costing EUR 80 per head should be permissible because this cost is less than the €150 threshold mentioned in the guidelines [3].
+
+> Evidence: ""all hospitality offered, given or accepted (except for normal business lunches or evening meals with a value of less than €150 per head);"" [3]
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+- Lactalis: 22 stories, average sentiment +0.12, 14% negative, 2 event stories
+- FrieslandCampina: 26 stories, average sentiment +0.37, 8% negative, 0 event stories
+- Danone: 70 stories, average sentiment +0.35, 9% negative, 0 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Anti Bribery Policy External 002, p.4 (2025)
+[2] Anti Bribery Policy External 002, p.5 (2025)
+[3] Anti Bribery Policy External 002, p.6 (2025)
+[4] Arla Annual Report 2023 Uk, p.86 (2023)
+[5] Uk Arla Consolidated Annual Report 2020, p.75 (2020)"
+Should we move the company headquarters to another Danish city?,decision,decision,True,True,conflict,conflict,True,True,192.7,6,"## Summary
+Based on current company documentation, moving the headquarters to another Danish city is highly restricted due to legal requirements. The articles of association explicitly state that the registered office of the Cooperative must be situated in the City of Aarhus, Denmark. This mandatory location creates a policy conflict regarding any potential relocation plans. Therefore, while market data tracks competitors like Lactalis and FrieslandCampina, internal policies mandate adherence to the established corporate address in Aarhus.
+
+## Policy check
+Verdict: **CONFLICT**. The articles of association explicitly state that the registered office of the Cooperative shall be situated in the City of Aarhus, Denmark.
+
+Cited: Articles Of Association En Oct 2023, p.3
+
+## Risk assessment
+**MEDIUM** (score 55.5/100; policy 90, regulatory 0, external 7, evidence 90)
+
+- Policy verdict: conflict (Articles Of Association En Oct 2023 p.3)
+- Weak evidence: weak match, few passages, graded not relevant, needed a retry
+
+Suggested mitigations:
+- Do not proceed until Legal and Compliance have reviewed the conflicting policy.
+- Evidence is thin: gather more internal precedents or documents before deciding.
+
+## Internal evidence
+I could not find this in the Arla documents.
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+- Lactalis: 22 stories, average sentiment +0.12, 14% negative, 2 event stories
+- FrieslandCampina: 26 stories, average sentiment +0.37, 8% negative, 0 event stories
+- Danone: 70 stories, average sentiment +0.35, 9% negative, 0 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Arla Annual Report 2022 Uk, p.52 (2022)
+[2] Arla Hy26 Uk, p.2 (2026)
+[3] Uk Arla Consolidated Annual Report 2020, p.13 (2020)
+[4] Arla Code Of Conduct Uk Final Orig Emco Word, p.32 (2025)
+[5] Arla Annual Report 2022 Uk, p.13 (2022)"
+What was Arla's performance price in 2021 and in the first half of 2026?,lookup,lookup,True,False,,,True,False,311.6,11,"## Summary
+Arla's performance price in 2021 was 39.7 EUR-cent/kg. Looking ahead, Arla's average performance price for the first half of 2026 is projected to be 51.4 EUR-CENT/KG. This data provides a clear comparison between historical pricing and future estimates.
+
+## Internal evidence
+**What was Arla's performance price in 2021?**
+Arla's performance price in 2021 was 39.7 EUR-cent/kg [1], [2], [3], [5], [6], [7].
+
+**What was Arla's performance price in the first half of 2026?**
+Arla's average performance price in the first half of 2026 was 51.4 EUR-CENT/KG.
+
+> Evidence: ""Our performance price reached 39.7 EUR-cent/kg in 2021."" [1] | ""Average performance price 51.4"" [9]
+
+## Sources
+[1] Arla Consolidated Annual Report 2021 En, p.8 (2021)
+[2][3] Arla Consolidated Annual Report 2021 En, p.39 (2021)
+[4] Arla Consolidated Annual Report 2021 En, p.6 (2021)
+[5] Arla Consolidated Annual Report 2021 En, p.7 (2021)
+[6] Arla Consolidated Annual Report 2021 En, p.79 (2021)
+[7] Arla Consolidated Annual Report 2021 En, p.4 (2021)
+[8] Arla Consolidated Annual Report 2021 En, p.40 (2021)
+[9][15] Arla Hy26 Uk, p.11 (2026)
+[10][13] Arla Hy26 Uk, p.13 (2026)
+[11] Arla Hy26 Uk, p.10 (2026)
+[12] Arla Hy26 Uk, p.24 (2026)
+[14] Arla Hy26 Uk, p.5 (2026)
+[16] Arla Hy26 Uk, p.29 (2026)
+
+> Warning: this answer could not be fully verified: [2] answer has no citations"
+We are considering a recruitment fee charged to workers at a supplier plant,decision,decision,True,True,conflict,conflict,True,True,143.2,4,"## Summary
+Charging recruitment fees to workers at supplier plants is prohibited by Arla's policies. According to the Code of Conduct, suppliers must not require workers to pay deposits or recruitment fees for employment, and if such fees are found to have been paid, they must be repaid. This issue represents a conflict with policy (Policy 8.3), which explicitly states that neither the Supplier nor its recruitment partners should charge these fees. Arla actively addresses this risk by conducting human rights spot checks focused on preventing the payment of recruitment fees in regions like the Middle East.
+
+## Policy check
+Verdict: **CONFLICT**. Policy 8.3 explicitly states that the Supplier or its recruitment partners must not require workers to pay deposits or recruitment fees for a job.
+
+Cited: Arla Foods Code Of Conduct For Suppliers, p.3
+
+## Risk assessment
+**MEDIUM** (score 44.5/100; policy 90, regulatory 35, external 7, evidence 0)
+
+- Policy verdict: conflict (Arla Foods Code Of Conduct For Suppliers p.3)
+- Regulatory exposure: human_rights
+
+Suggested mitigations:
+- Do not proceed until Legal and Compliance have reviewed the conflicting policy.
+- Check the regulatory requirements for the flagged areas with Legal before proceeding.
+
+## Internal evidence
+The context indicates that requiring workers to pay recruitment fees or deposits is prohibited by Arla's policies and has been a focus of compliance checks in recent years.
+
+According to the Code of Conduct, suppliers must not require workers to pay deposits or recruitment fees for a job, and if such fees are found to have been paid, they must be repaid [1]. Furthermore, Arla has addressed this issue by conducting human rights spot checks focusing on the risk of recruitment fees in the Middle East [3], and previously noted indications of ""hidden"" fees being paid to recruitment agencies during interviews with third-party employees in the Middle East [2].
+
+> Evidence: ""The Supplier or its recruitment partners must not require workers to pay deposits or recruitment fees for a job. If any such fees are found to have been paid by workers, they must be repaid."" [1]
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+- Lactalis: 22 stories, average sentiment +0.12, 14% negative, 2 event stories
+- FrieslandCampina: 26 stories, average sentiment +0.37, 8% negative, 0 event stories
+- Danone: 70 stories, average sentiment +0.35, 9% negative, 0 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Arla Foods Code Of Conduct For Suppliers, p.3 (2025)
+[2] Arla Annual Report 2022 Uk, p.55 (2022)
+[3] Arla Foods Modern Slavery Statement 2023, p.4 (2023)
+[4] Arla Annual Report 2023 Uk, p.67 (2023)
+[5] Arla Annual Report 2023 Uk, p.135 (2023)"
+Who are Arla's main competitors in the dairy market right now?,market,chat,False,True,,,True,True,46.3,2,"Based on the available information, Arla tracks news for its competitors: Lactalis, FrieslandCampina, and Danone."
+What is the minimum age below which employing young people counts as child labour for Arla suppliers?,lookup,lookup,True,True,,,True,True,69.6,3,"For Arla suppliers, child labour is defined as work conducted by people under 15 years of age, though this definition must also observe the completion of compulsory schooling or any higher age limit stipulated by local legislation [2], [1].
+
+> Evidence: ""We do not accept child labour, defined as work conducted by people under 15 years of age, or a higher age if local legislation stipulates a higher age limit and/or longer compulsory schooling."" [2]
+
+**Sources**
+[1] Arla Foods Code Of Conduct For Suppliers, p.2 (2025)
+[2] Arla Code Of Conduct Uk Final Orig Emco Word, p.35 (2025)
+[3] Arla Foods Modern Slavery Statement 2021, p.3 (2021)
+[4] Arla Foods Modern Slavery Statement 2023, p.3 (2023)
+[5] English Long Version Arlagardencatalogue V2.1 March22, p.23 (2022)"
+How much notice must a member give to resign from the cooperative?,lookup,lookup,True,True,,,True,True,56.5,3,"A member must give at least 12 months' notice to the Cooperative when resigning in writing [1].
+
+> Evidence: ""Members may only resign in writing with at least 12 months' notice to the Cooperative to expire at the end of a month"" [1]
+
+**Sources**
+[1][4] Articles Of Association En Oct 2023, p.4 (2023)
+[2] Articles Of Association En Oct 2023, p.7 (2023)
+[3][5] Articles Of Association En Oct 2023, p.5 (2023)"
+What share of Arla's group revenue does the UK contribute?,lookup,lookup,True,True,,,True,True,83.4,3,"The share of Arla's group revenue contributed by the UK varies depending on the year and report scope. For 2024, the United Kingdom contributed 25% of the revenue [3].
+
+> Evidence: ""United Kingdom 3,492 3,441 25%"" [3]
+
+**Sources**
+[1] Arla Annual Report 2024 Uk2, p.25 (2024)
+[2] Arla Ar25 Abridged Uk Web, p.21 (2025)
+[3] Arla Annual Report 2024 Uk2, p.112 (2024)
+[4] Arla Annual Report 2024 Uk2, p.117 (2024)
+[5] Uk Arla Consolidated Annual Report 2020, p.75 (2020)"
+How many colleagues did Arla employ according to the 2023 modern slavery statement?,lookup,lookup,True,True,,,True,True,92.2,3,"> The top source ('Arla Foods Modern Slavery Statement 2023', 2023) may be superseded by a 2024 version.
+Arla employed approximately 20,900 colleagues, and this refers to the whole company. The year mentioned is not specified for the employment figure but is presented within the context of the 2023 statement [1].
+
+> Evidence: ""More than 16,000 suppliers deliver to our multiple processing sites and offices across the world, where Arla employs approximately 20,900 colleagues."" [1]
+
+**Sources**
+[1] Arla Foods Modern Slavery Statement 2023, p.1 (2023)
+[2] Arla Foods Modern Slavery Statement 2023, p.5 (2023)
+[3] Arla Foods Modern Slavery Statement 2023, p.4 (2023)
+[4] Arla Foods Modern Slavery Statement 2023, p.3 (2023)
+[5] Arla Annual Report 2023 Uk, p.66 (2023)"
+Who conducts the on-farm audits for the Arlagården programme?,lookup,lookup,True,True,,,True,True,95.2,3,"All on-farm audits to assess farmers’ compliance are conducted by SGS, Arla's external audit partner [1], or a leading international inspection, verification, testing and certification company [3].
+
+> Evidence: ""To ensure a globally aligned and calibrated approach to the auditing of Arlagården®, all on-farm audits to assess farmers’ compliance are conducted by SGS (a leading international inspection, verification, testing and certification company)."" [3]
+
+**Sources**
+[1] English Long Version Arlagardencatalogue V2.1 March22, p.27 (2022)
+[2] Arla Annual Report 2024 Uk2, p.79 (2024)
+[3] English Long Version Arlagardencatalogue V2.1 March22, p.5 (2022)
+[4] Arla Foods Modern Slavery Statement 2023, p.3 (2023)
+[5] Arla Foods Modern Slavery Statement 2024 1, p.3 (2024)"
+What is the latest news about Arla?,market,market,True,True,,,True,True,258.1,7,"## Summary
+Arla has faced several recent news developments, primarily concerning product safety and operational changes. Most recently, Arla was involved in food safety alerts regarding glass fragments found in products, leading to recalls of batches of 'Protein Pudding.' Furthermore, there were reports detailing a recall of three batches of the 'Protein Pudding' due to these glass warnings. Separately, Arla Sweden also reported axes contracts with 52 farms amid falling demand for organic milk.
+
+## Internal evidence
+Arla's latest corporate development mentioned in the context is its merger with DMK on June 1, 2026 [4]. Regarding governance, Arla regularly updates its Code of Conduct for Suppliers and Business Partners to ensure adherence to the latest international standards [2].
+
+> Evidence: ""Following the merger with DMK on 1 June 2026, DMK’s financial results for June 2026 are reflected in this report."" [4]
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Arla Annual Report 2022 Uk, p.54 (2022)
+[2] Arla Annual Report 2024 Uk2, p.78 (2024)
+[3] Arla Annual Report 2023 Uk, p.67 (2023)
+[4] Arla Hy26 Uk, p.2 (2026)
+[5] Arla Consolidated Annual Report 2021 En, p.112 (2021)
+[6] Arla Foods Modern Slavery Statement 2022, p.4 (2022)
+[7] Arla Consolidated Annual Report 2021 En, p.88 (2021)
+[8] Arla Consolidated Annual Report 2021 En, p.108 (2021)"
+How are Lactalis and Danone doing in the market right now?,market,market,True,True,,,True,True,122.6,4,"## Summary
+Based on recent market data, Danone currently has a higher volume of coverage with 70 stories and maintains a strong average sentiment of +0.35, while only reporting 9% negative news. Lactalis has seen 22 stories over the last 30 days, showing an average sentiment of +0.12 but with a slightly higher percentage of negative reports at 14%. Overall, Danone's coverage volume and positive sentiment suggest significant market activity compared to Lactalis.
+
+## Internal evidence
+The context does not contain the answer.
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+- Lactalis: 22 stories, average sentiment +0.12, 14% negative, 2 event stories
+- Danone: 70 stories, average sentiment +0.35, 9% negative, 0 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Arla Annual Report 2023 Uk, p.26 (2023)
+[2] Arla Annual Report 2022 Uk, p.30 (2022)
+[3] Arla Annual Report 2022 Uk, p.31 (2022)
+[4] Arla Consolidated Annual Report 2021 En, p.85 (2021)
+[5] Arla Annual Report 2024 Uk2, p.25 (2024)"
+What is currently happening with Arla's protein pudding?,market,market,True,True,,,True,True,136.0,4,"## Summary
+Arla's Protein Pudding is currently subject to recalls due to safety concerns involving glass fragments. Specifically, health ministries have announced the recall of multiple batches of the product. These warnings indicate that consumers should be aware of potential glass contamination and affected dates for the Arla Protein Pudding.
+
+## Internal evidence
+Arla Protein has resonated with consumers and delivered volume growth in 2022 [2]. The pudding product was listed as one of the delicious products within the successful Arla Protein range [2].
+
+Figure Reference: Product/Segment (Arla Protein)
+Year: 2022
+
+> Evidence: ""By focusing on the fuelling power of protein alongside delicious products, such as milk-based beverages, quarks and puddings, Arla Protein has resonated with consumers and delivered 48.9 per cent volume growth in 2022."" [2]
+
+## Market now
+As of 2026-10-30 (snapshot news_snapshot_20261030.json), last 30 days:
+- Arla: 34 stories, average sentiment +0.18, 22% negative, 10 event stories
+
+Key Arla headlines:
+- 2026-10-29, en.edairynews.com: [AESAN food alert Spain | Spain issues food safety alert over glass fragments in Arla Protein dessert](https://news.google.com/rss/articles/CBMipAFBVV95cUxQZWE0bVJnVVkxQUxkX1ZhRmZzdXdfdzh2LUloai1SY3Qzbk1xcXFvaXBzQ0J4aXloemVrMWtta1dwWkdseC1kWC1aalQwbWloQjlTXzQ1VFNSVElrbGNuQ3NZNGxMelMyd2tEcnQybkVrdkticDJBVmNCbkRPUlNYVlRtLWNBeDE1bi04MmJHSDdhZ18zN19mUzg5LVUtcW55dkdRQw?oc=5) (sentiment -0.34)
+- 2026-10-28, Qatar Tribune: [Health ministry announces recall of three batches of Arla Foods 'Protein Pudding' product​​](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQb0N3X2VDeGl1MUZUQVlCdUhSMmtDcGdRODR6VVZwNjB6WDZ4aTFCdWk3S0laNXRENzg2SGxkY1kzbXgyOWR1d2FCQXI4NE9vT2FNQ1gxNEF4OEJZVWdZYi1aeEgta0E2cGdsSTNpTHNnR1ZMbE9yWG82VlY1WHJFb1k2VG14eWJ6ZlE1YVhYbzlWOTFZNi1IanZ6aGU1cW5KRjNSMDZaRlY5ZHl4QjZZSnpMS2pKWEdXVTFuM3V4VlB2UGZOM3prdHo1WFFvcGlhVEFxVXh2NDVTdl9q?oc=5) (sentiment -0.94)
+- 2026-10-28, UKNIP: [Arla Protein Pudding Recall: Glass Warning and Affected Dates](https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFDUTlZMTRiSW1CTkFBS1VuWWhTUEdlemVubmNNR2VfMWd1akF5eFMtb0FKVmVpM1VickFzdFZkdDF5RG5IckVWb0k4bUNLOThuVFVGbE1CUkFSNDZxMGdua01iQXd6V3ZBMW5BZXNvdm94VEFkSzRIWklsTDhvUnFHWWwwV2hmeS13cHpORVdRODg4VTJlazBGNldHal8yY1BPQUpRNkViWm1MbmNTUG9acw?oc=5) (sentiment -0.93)
+- 2026-10-09, DairyReporter.com: [Arla Sweden axes contracts with 52 farms amid falling demand for organic milk](https://news.google.com/rss/articles/CBMixgFBVV95cUxQR0VKM3Atb3lNQkYtcTUwS1c2amd2emtvUUs2d0tScy10eUJkWGFKVjdGLVo5Q3ZCZXFWZS01TjNxSkVzdkJpTF92cTFMbmwxZjRhNXZVVUY4V3VvSEFYdjFoaGdCbHVVd2V0d2ZFenpJWG0zTW5TNllxS01ET1pqU3FobEVpd1pUV0VjdUpTNHBycXhCUmRhb3Q1QWpoRVJGUWZjNWc2cDBCSGlkdWtkQlhKaThRTkJYc05oaEpHeERWb0FmaUE?oc=5) (sentiment -0.96)
+
+## Sources
+[1] Arla Consolidated Annual Report 2021 En, p.41 (2021)
+[2] Arla Annual Report 2022 Uk, p.50 (2022)
+[3] Arla Annual Report 2022 Uk, p.149 (2022)
+[4] Arla Hy26 Uk, p.10 (2026)
+[5] Arla Annual Report 2024 Uk2, p.66 (2024)"
+Compare Arla's revenue in 2023 and 2024.,lookup,lookup,True,True,,,True,False,242.1,11,"## Summary
+Arla's revenue saw significant differences between 2023 and 2024. In 2023, Arla reported a revenue of 3,618 million EUR. By comparison, Arla's revenue in 2024 was 13,770 [15].
+
+## Internal evidence
+**Arla's revenue in 2023**
+The figure refers to Arla's revenue by brand, and the year is 2023.
+
+Arla's revenue in 2023 was 3,618 million EUR.
+
+**Arla's revenue in 2024**
+Arla's revenue in 2024 was 13,770 [15].
+
+> Evidence: ""Arla 3,618 3,702"" [6] | ""Revenue 13,770 13,674"" [15]
+
+## Sources
+[1][2] Arla Annual Report 2023 Uk, p.100 (2023)
+[3] Arla Annual Report 2023 Uk, p.98 (2023)
+[4][8] Arla Annual Report 2023 Uk, p.19 (2023)
+[5] Arla Annual Report 2023 Uk, p.156 (2023)
+[6] Arla Annual Report 2023 Uk, p.99 (2023)
+[7] Arla Annual Report 2023 Uk, p.87 (2023)
+[9][15] Arla Annual Report 2024 Uk2, p.117 (2024)
+[10][11][14] Arla Annual Report 2024 Uk2, p.113 (2024)
+[12] Arla Annual Report 2024 Uk2, p.171 (2024)
+[13] Arla Annual Report 2024 Uk2, p.50 (2024)
+[16] Arla Annual Report 2024 Uk2, p.49 (2024)
+
+> Warning: this answer could not be fully verified: [1] answer has no citations"
+What is the best pizza topping?,out_of_scope,out_of_scope,True,True,,,True,True,38.6,1,"This question is not about Arla, dairy or the food business, so I did not search the documents or the news."
+Write me a poem about the sea,out_of_scope,out_of_scope,True,True,,,True,True,42.2,1,"This question is not about Arla, dairy or the food business, so I did not search the documents or the news."
+What is the capital of Australia?,out_of_scope,out_of_scope,True,True,,,True,True,26.5,1,"This question is not about Arla, dairy or the food business, so I did not search the documents or the news."

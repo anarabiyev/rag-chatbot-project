@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\abiye\Desktop\arla-rag\venv\lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\abiye\.cache\huggingface\hub\models--BAAI--bge-base-en-v1.5. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+C:\Users\abiye\Desktop\arla-rag\venv\lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\abiye\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+anti_bribery_0                     2025  8 pages
+annual_report_2022                 2022  150 pages
+annual_report_2024                 2024  171 pages
+annual_report_2025                 2025  31 pages
+animal_welfare_2025                2025  9 pages
+code_of_conduct_0                  2025  38 pages
+supplier_code_0                    2025  4 pages
+modern_slavery_2021                2021  4 pages
+modern_slavery_2022                2022  5 pages
+modern_slavery_2023                2023  5 pages
+modern_slavery_2024                2024  5 pages
+tax_strategy_2022                  2022  2 pages
+half_year_report_2026              2026  31 pages
+financing_framework_2020           2020  17 pages
+annual_report_2023                 2023  156 pages
+annual_report_2021                 2021  135 pages
+articles_of_association_2023       2023  18 pages
+farm_programme_2022                2022  30 pages
+human_rights_2025                  2025  2 pages
+policy_statement_2013              2013  6 pages
+responsible_sourcing_2021          2021  11 pages
+annual_report_2020                 2020  130 pages
+recursive: 4789 chunks
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   5%|▌         | 10/199 [00:00<00:02, 85.46it/s]Loading weights:  71%|███████▏  | 142/199 [00:00<00:00, 688.61it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 637.25it/s]
+Could not reach the Hub ([WinError 10054] An existing connection was forcibly closed by the remote host). Using cached commit hash for 'BAAI/bge-base-en-v1.5'.
+  256/4789  512/4789  768/4789  1024/4789  1280/4789  1536/4789  1792/4789  2048/4789  2304/4789  2560/4789  2816/4789  3072/4789  3328/4789  3584/4789  3840/4789  4096/4789  4352/4789  4608/4789  4789/4789
+parent: 13647 chunks
+  256/13647  512/13647  768/13647  1024/13647  1280/13647  1536/13647  1792/13647  2048/13647  2304/13647  2560/13647  2816/13647  3072/13647  3328/13647  3584/13647  3840/13647  4096/13647  4352/13647  4608/13647  4864/13647  5120/13647  5376/13647  5632/13647  5888/13647  6144/13647  6400/13647  6656/13647  6912/13647  7168/13647  7424/13647  7680/13647  7936/13647  8192/13647  8448/13647  8704/13647  8960/13647  9216/13647  9472/13647  9728/13647  9984/13647  10240/13647  10496/13647  10752/13647  11008/13647  11264/13647  11520/13647  11776/13647  12032/13647  12288/13647  12544/13647  12800/13647  13056/13647  13312/13647  13568/13647  13647/13647

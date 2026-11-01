@@ -1,0 +1,41 @@
+First end-to-end eval run (before the decision-routing, competitor and critic fixes). Copied from the console output of that run.
+The per-case answer texts and the results CSV were deleted by mistake and are not recoverable.
+
+20 cases
+routing accuracy:    0.75
+answer correctness:  0.65
+policy verdict:      0.00 (5 decisions)
+critic verified:     0.80
+
+intent       n  correct   mean s  LLM calls
+lookup       8     0.88    144.0        5.2
+market       4     0.75    163.2        4.8
+decision     5     0.00    182.4        5.8
+out_of_scope   3     1.00     35.0        1.0
+
+UNVERIFIED How are Lactalis and Danone doing in the market right now?
+  critic: answer has no citations; answer has no supporting quote
+UNVERIFIED Should we move the company headquarters to another Danish city?
+  critic: no relevant evidence found
+UNVERIFIED Compare Arla's revenue in 2023 and 2024.
+  critic: [1] answer has no citations; [2] answer has no citations
+UNVERIFIED What was Arla's performance price in 2021 and in the first half of 2026?
+  critic: [2] answer has no citations
+
+Per-case lines seen while the run was in progress (seconds are per query):
+ok     82.7s Above what value must individual gifts be recorded on the gifts and hospita
+ok    105.5s What is the minimum age below which employing young people counts as child
+ok     76.2s How much notice must a member give to resign from the cooperative?
+ok    166.2s What share of Arla's group revenue does the UK contribute?
+ok     78.1s How many colleagues did Arla employ according to the 2023 modern slavery st
+ok     90.6s Who conducts the on-farm audits for the Arlagarden programme?
+ok    148.3s What is the latest news about Arla?
+ok    218.6s How are Lactalis and Danone doing in the market right now?
+ok    143.7s What is currently happening with Arla's protein pudding?
+MISS  100.2s Should we accept a EUR 300 gift voucher from a supplier during an ongoing tender?
+MISS  145.4s Can we pay a small facilitation payment to speed up customs clearance?
+MISS  222.5s Should we take a customer to a normal business lunch costing EUR 80 per head?
+MISS  233.6s Should we move the company headquarters to another Danish city?
+ok    245.1s Compare Arla's revenue in 2023 and 2024.
+MISS  307.4s What was Arla's performance price in 2021 and in the first half of 2026?
+(the last 5 cases: recruitment fee MISS, competitors MISS, 3 out_of_scope ok)

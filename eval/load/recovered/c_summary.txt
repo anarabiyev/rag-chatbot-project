@@ -1,0 +1,17 @@
+Run C: extrapolation from run B (sequential, one local model)
+query mix = mix of eval/agent_cases.csv: lookup 40%, market 20%, decision 25%, out_of_scope 15%
+
+route          n in B   mean s    max s
+lookup              4    128.4    285.6
+market              3    254.0    281.9
+decision            3    255.1    385.0
+out_of_scope        2     45.8     50.0
+
+expected seconds per query: 172.8 (mean per route), 274.4 (slowest observed per route)
+
+ queries    estimate (mean)    upper bound (slowest)
+      50             2.4 h                   3.8 h
+     100             4.8 h                   7.6 h
+     200             9.6 h                  15.2 h
+
+The estimate assumes queries run one after another against one local model. Run B has only a few queries per route, so treat it as an order of magnitude.

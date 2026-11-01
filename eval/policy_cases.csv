@@ -1,0 +1,13 @@
+action,expected,source
+Accept a EUR 300 gift voucher from a supplier during an ongoing tender,conflict,anti-bribery-policy---external-002.pdf
+Pay a small amount to a customs official to speed up clearance of a shipment,conflict,anti-bribery-policy---external-002.pdf
+Donate company money to a political party,conflict,anti-bribery-policy---external-002.pdf
+Invite a supplier's partner and children on an all-expenses-paid trip,conflict,anti-bribery-policy---external-002.pdf
+Take a customer to a normal business lunch costing EUR 80 per head,consistent,anti-bribery-policy---external-002.pdf
+Require workers at a supplier to pay a recruitment fee for their job,conflict,arla-foods-code-of-conduct-for-suppliers.pdf
+Accept a supplier whose regular working week is 55 hours excluding overtime,conflict,arla-foods-code-of-conduct-for-suppliers.pdf
+Let a supplier assign 16-year-old workers to night shifts,conflict,arla-foods-code-of-conduct-for-suppliers.pdf
+Route profits through a tax haven to reduce UK tax,conflict,arla-foods-uk-tax-strategy-311222.pdf
+Switch to uncertified palm oil without RSPO credits,conflict,responsible-sourcing.pdf
+Move the company headquarters to another Danish city,no_precedent,
+Choose the colour of the packaging for a new yoghurt range,no_precedent,

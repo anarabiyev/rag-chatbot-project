@@ -1,0 +1,43 @@
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/BAAI/bge-small-en-v1.5: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'BAAI/bge-small-en-v1.5'.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3536.17it/s]
+ok     69.6s What is the minimum age below which employing young people counts as child 
+ok     56.5s How much notice must a member give to resign from the cooperative?
+ok     83.4s What share of Arla's group revenue does the UK contribute?
+ok     92.2s How many colleagues did Arla employ according to the 2023 modern slavery st
+ok     95.2s Who conducts the on-farm audits for the Arlagården programme?
+ok    258.1s What is the latest news about Arla?
+ok    122.6s How are Lactalis and Danone doing in the market right now?
+ok    136.0s What is currently happening with Arla's protein pudding?
+ok    242.1s Compare Arla's revenue in 2023 and 2024.
+ok     38.6s What is the best pizza topping?
+ok     42.2s Write me a poem about the sea
+ok     26.5s What is the capital of Australia?
+
+20 cases
+routing accuracy:    0.95
+answer correctness:  0.95
+policy verdict:      1.00 (5 decisions)
+critic verified:     0.85
+
+intent       n  correct   mean s  LLM calls
+lookup       8     0.88    126.3        5.0
+decision     5     1.00    175.9        5.4
+market       4     1.00    140.8        4.2
+out_of_scope   3     1.00     35.8        1.0
+
+UNVERIFIED Can we pay a small facilitation payment to speed up customs clearance?
+  critic: answer has no citations
+
+UNVERIFIED What was Arla's performance price in 2021 and in the first half of 2026?
+  critic: [2] answer has no citations
+
+UNVERIFIED Compare Arla's revenue in 2023 and 2024.
+  critic: [1] answer has no citations
+
+MISS What was Arla's performance price in 2021 and in the first half of 2026?
+  intent lookup (expected lookup), verdict -
+  answer: ## Summary Arla's performance price in 2021 was 39.7 EUR-cent/kg. Looking ahead, Arla's average performance price for the first half of 2026 is projected to be 51.4 EUR-CENT/KG. This data provides a clear comparison between historical pricing and future estima
+
+MISS Who are Arla's main competitors in the dairy market right now?
+  intent chat (expected market), verdict -
+  answer: Based on the available information, Arla tracks news for its competitors: Lactalis, FrieslandCampina, and Danone.

@@ -1,0 +1,43 @@
+0 already done, 12 to run, budget 55 min
+cold start: graph built in 9.6s, first query done after 81.3s in total
+model warm-up call: 0.7s
+lookup           76.3s retries=0 llm_calls=3 Above what value must individual gifts be recorded on the gi 
+market          281.9s retries=1 llm_calls=7 What is the latest news about Arla? 
+decision        207.0s retries=1 llm_calls=5 Should we accept a EUR 300 gift voucher from a supplier duri 
+out_of_scope     50.0s retries=0 llm_calls=1 What is the best pizza topping? 
+lookup           79.2s retries=0 llm_calls=3 How much notice must a member give to resign from the cooper 
+market          220.2s retries=1 llm_calls=7 How are Lactalis and Danone doing in the market right now? 
+decision        173.2s retries=1 llm_calls=5 Can we pay a small facilitation payment to speed up customs  
+out_of_scope     41.6s retries=0 llm_calls=1 Write me a poem about the sea 
+lookup           72.6s retries=0 llm_calls=3 How many colleagues did Arla employ according to the 2023 mo 
+market          260.0s retries=1 llm_calls=7 What is currently happening with Arla's protein pudding? 
+decision        385.0s retries=1 llm_calls=13 Should we move the company headquarters to another Danish ci 
+lookup          285.6s retries=1 llm_calls=11 Compare Arla's revenue in 2023 and 2024. 
+=== B: real model, concurrency 1 ===
+12 queries, 0 errors, wall time 2132.7s, throughput 0.3 queries/min
+route            n   mean s    p50 s    p95 s    max s  retry %  routed ok
+lookup           4   128.42    76.34   285.55   285.55      25%       100%
+market           3   254.03   259.99   281.94   281.94     100%       100%
+decision         3   255.09   207.04   385.05   385.05     100%        33%
+out_of_scope     2    45.81    41.57    50.05    50.05       0%       100%
+all             12   177.72   173.17   385.05   385.05      58%        83%
+Share of node time (summed over queries, parallel branches overlap):
+  rag            1476.5s  64.3%
+  synthesize      396.7s  17.3%
+  planner         372.5s  16.2%
+  policy           49.5s   2.2%
+  web               0.1s   0.0%
+  critic            0.0s   0.0%
+  gather            0.0s   0.0%
+  retry             0.0s   0.0%
+  risk              0.0s   0.0%
+LLM calls: 66, 2293.0s = 107.5% of total query time
+  task       calls   seconds  tokens in  tokens out  s/call  out tok/s
+  answer        17     859.6      30092       11955    50.6       13.9
+  rewrite       21     457.7       1861        7347    21.8       16.1
+  summary       10     396.7      10079        6342    39.7       16.0
+  plan          12     372.5       3614        5992    31.0       16.1
+  grade          4     157.1       6658        2434    39.3       15.5
+  policy         2      49.4        974         800    24.7       16.2
+
+[exited with code 0]

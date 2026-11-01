@@ -1,0 +1,102 @@
+{
+ "Above what value must individual gifts be recorded on the gifts and hospitality register?": [
+  "gifts hospitality value limit",
+  null,
+  "code_of_conduct"
+ ],
+ "Does Arla make or accept facilitation payments?": [
+  "facilitation payments anti-bribery",
+  null,
+  "anti_bribery"
+ ],
+ "How many hours per week may suppliers' regular working hours not exceed?": [
+  "Maximum weekly working hours for suppliers",
+  null,
+  "supplier_code"
+ ],
+ "What is the minimum age below which employing young people counts as child labour for Arla suppliers?": [
+  "child labor minimum age suppliers",
+  null,
+  "supplier_code"
+ ],
+ "How much notice must a member give to resign from the cooperative?": [
+  "Notice period for cooperative member resignation",
+  null,
+  "articles_of_association"
+ ],
+ "What share of Arla's group revenue does the UK contribute?": [
+  "UK revenue contribution to group sales",
+  null,
+  "annual_report"
+ ],
+ "What does Arla do if it discovers child labour?": [
+  "child labour detection and response",
+  null,
+  "modern_slavery"
+ ],
+ "Which three ingredients does Arla's responsible sourcing policy focus on?": [
+  "Responsible sourcing ingredients",
+  null,
+  "responsible_sourcing"
+ ],
+ "What complaints procedure does Arla Foods Deutschland describe under the German Supply Chain Due Diligence Act?": [
+  "complaints procedure German Supply Chain Due Diligence Act",
+  null,
+  "responsible_sourcing"
+ ],
+ "How many colleagues did Arla employ according to the 2023 modern slavery statement?": [
+  "employee count modern slavery",
+  2023,
+  "modern_slavery"
+ ],
+ "How many colleagues did Arla employ according to the 2022 modern slavery statement?": [
+  "employee count modern slavery statement",
+  2022,
+  "modern_slavery"
+ ],
+ "What was the performance price for 2020 as reported in the 2020 annual report?": [
+  "performance price",
+  2020,
+  "annual_report"
+ ],
+ "How many dairy farmers owned Arla according to the 2021 annual report?": [
+  "dairy farmers owned Arla",
+  2021,
+  "annual_report"
+ ],
+ "What was Arla's revenue in 2024?": [
+  "revenue",
+  2024,
+  "annual_report"
+ ],
+ "What was Arla's net profit in 2024 and what share of revenue was it?": [
+  "net profit revenue",
+  2024,
+  "annual_report"
+ ],
+ "How many milk-producing farmers owned Arla according to the 2024 annual report?": [
+  "farmer ownership structure Arla milk",
+  2024,
+  "annual_report"
+ ],
+ "What was Arla's revenue in 2025?": [
+  "revenue",
+  2025,
+  "annual_report"
+ ],
+ "What was Arla's performance price in the first half of 2026?": [
+  "performance price",
+  2026,
+  "half_year_report"
+ ],
+ "When did Arla complete its merger with DMK?": [
+  "merger with DMK completion date",
+  null,
+  null
+ ],
+ "Who conducts the on-farm audits for the Arlag\u00e5rden programme?": [
+  "Arlag\u00e5rden on-farm audits",
+  null,
+  "farm_programme"
+ ]
+}

@@ -1,0 +1,29 @@
+question,intent,keyword,verdict
+Above what value must individual gifts be recorded on the gifts and hospitality register?,lookup,150,
+What is the minimum age below which employing young people counts as child labour for Arla suppliers?,lookup,15,
+How much notice must a member give to resign from the cooperative?,lookup,12 months,
+What share of Arla's group revenue does the UK contribute?,lookup,25|26,
+Which three ingredients does Arla's responsible sourcing policy focus on?,lookup,cocoa,
+How many colleagues did Arla employ according to the 2023 modern slavery statement?,lookup,"20,900",
+What was Arla's revenue in 2024?,lookup,"13,770|13.8",
+How many milk-producing farmers owned Arla according to the 2024 annual report?,lookup,"7,624",
+What was Arla's performance price in the first half of 2026?,lookup,43.6,
+Who conducts the on-farm audits for the Arlagården programme?,lookup,SGS,
+What is the latest news about Arla?,market,recall|DMK,
+How are Lactalis and Danone doing in the market right now?,market,Lactalis&Danone,
+What is currently happening with Arla's protein pudding?,market,recall,
+Should we accept a EUR 300 gift voucher from a supplier during an ongoing tender?,decision,conflict,conflict
+Can we pay a small facilitation payment to speed up customs clearance?,decision,conflict,conflict
+Should we take a customer to a normal business lunch costing EUR 80 per head?,decision,consistent,consistent
+Should we move the company headquarters to another Danish city?,decision,conflict,conflict
+Compare Arla's revenue in 2023 and 2024.,lookup,"13,674|13.7&13,770|13.8",
+How many farmer owners did Arla have in 2021 versus 2024?,lookup,"8,956&7,624",
+What was Arla's performance price in 2021 and in the first half of 2026?,lookup,39.7&43.6,
+Is accepting a gift voucher from a supplier during a tender a problem?,decision,conflict,conflict
+Would it be acceptable to schedule 16-year-olds for night shifts?,decision,conflict,conflict
+We are considering a recruitment fee charged to workers at a supplier plant,decision,conflict,conflict
+Any recent headlines on FrieslandCampina?,market,FrieslandCampina,
+Who are Arla's main competitors in the dairy market right now?,market,Lactalis,
+What is the best pizza topping?,out_of_scope,not about Arla,
+Write me a poem about the sea,out_of_scope,not about Arla,
+What is the capital of Australia?,out_of_scope,not about Arla,
