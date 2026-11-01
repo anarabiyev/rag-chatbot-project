@@ -51,7 +51,7 @@ How to read it: the planner picks exactly one intent per message. A **lookup** g
 
 - **Planner.** One LLM call decides the intent, splits a compound question into parts and, in a chat, rewrites a follow-up into a standalone question. Clear "should we / can we" questions are caught by a rule first (see Results).
 - **RAG subgraph.** A separate graph that finds and cites passages (next section). Parts of a compound question run in parallel.
-- **News pipeline.** Google News headlines for the company and three competitors (Lactalis, FrieslandCampina, Danone), cleaned and de-duplicated, scored with a local FinBERT model, and flagged for events such as recalls. No LLM is involved.
+- **News pipeline.** Google News headlines for the company and three competitors (Lactalis, FrieslandCampina, Danone; these are example competitors for Arla), cleaned and de-duplicated, sentiment scored with a local FinBERT model, and flagged for events such as recalls. No LLM is involved.
 - **Policy comparator and risk scorer.** Described below.
 - **Critic.** Checks citations, that every figure appears in the cited text, and that the quote is really there. On failure it retries once with wider retrieval, and if it still fails the answer carries a visible warning.
 
@@ -59,12 +59,12 @@ Choices worth explaining:
 
 - **The LLM writes, code decides.** Verdicts are validated, the risk level cannot be changed by the model, and the sections of an answer are built by code. The model only writes language.
 - **A small local model (Gemma 4 E4B).** No paid API was the rule, and it runs on ordinary hardware. The price is speed: about 16 tokens a second.
-- **A news snapshot, not live news.** The data is a dated snapshot (30 October 2026) so results can be reproduced and the container works offline.
+- **A news snapshot, not live news.** The external (new) data is a dated snapshot (30 October 2026) so results can be reproduced and the container works offline.
 - **The LLM stays outside Docker.** The container talks to LM Studio on the host, so the image does not have to carry a model.
 
 ### The RAG subgraph
 
-The RAG part is its own LangGraph graph, called from the main graph through a wrapper node. Its steps: **rewrite** the question into a short search query and a year, **retrieve**, **grade** the result, then **generate** a cited answer with a verbatim quote. If grading fails it rewrites once more with different keywords. Grading uses the retrieval distance first (at most 0.30 is relevant, above 0.45 is not) and asks the LLM only in between. If the evidence is missing, the answer is "I could not find this in the documents."
+The RAG part is its own LangGraph graph, called from the main graph through a wrapper node. Its steps: **rewrite** the question into a short search query and a year, **retrieve**, **grade** the result, then **generate** a cited answer. If grading fails it rewrites once more with different keywords. Grading uses the retrieval distance first (at most 0.30 is relevant, above 0.45 is not) and asks the LLM only in between. If the evidence is missing, the answer is "I could not find this in the documents."
 
 Every design choice below was tested rather than assumed.
 
@@ -96,9 +96,9 @@ risk = 0.40 x policy + 0.20 x regulatory + 0.20 x news + 0.20 x evidence
 | Score | How it is set |
 |---|---|
 | Policy | `conflict` 90, `no_precedent` 50, `consistent` 10 |
-| Regulatory | Keywords in the plan add points per regulated area (bribery 40, sanctions 40, human rights 35, food safety 30, competition 25 and so on), capped at 100 |
-| News | Share of negative headlines and of recall-type events. Only events that relate to the plan count, so an unrelated recall does not raise the score. If news is unavailable it is a neutral 50. |
-| Evidence | Penalties for a weak best match, few passages, a "not relevant" grade or a retry |
+| Regulatory | How many sensitive legal topics the plan touches. If the plan mentions a topic (for example "gift" or "tender" means bribery), that topic adds points: bribery 40, sanctions 40, human rights 35, food safety 30, competition 25, and so on. The points are added up, and the total never goes above 100. |
+| News | How bad the current news is for the company. It looks at how many headlines are negative and whether there are serious events such as recalls. Only news related to the plan counts, so an unrelated recall does not raise the score. If no news is available, the score is a neutral 50. |
+| Evidence | How weak the document evidence is. Points are added when the best match is poor, when fewer than 3 passages were found, when the search result was judged not relevant, or when a retry was needed. More points means we should trust the answer less. |
 
 The level is LOW below 35, MEDIUM below 65 and HIGH from 65. A hard floor keeps any `conflict` with an anti-bribery, human rights, supplier-code or modern-slavery policy at MEDIUM or above. The output also lists the top drivers and a mitigation for each. All weights and thresholds are in `config/risk.json`, and 12 unit tests cover the scorer. The weights are expert-set, not learned, so the score is a transparent decision aid and not a prediction. Example: the EUR 300 voucher during a tender scores policy 90, regulatory 40, news 7, evidence 0, total 45.5, so MEDIUM.
 
@@ -111,9 +111,9 @@ The set is organised so that every route of the graph is exercised, and each rou
 | Route | Questions | What they test |
 |---|---|---|
 | lookup | 8: six single facts and two comparisons ("2023 versus 2024") | Retrieval, the year filter, citations, and splitting a question into parallel parts |
-| market | 4 | The news branch running next to RAG, including a question that names no company ("who are the competitors?") |
-| decision | 5: four conflicts and one allowed case (a EUR 80 business lunch) | The policy comparator and the risk scorer, with both outcomes of the verdict |
-| out_of_scope | 3 (pizza, a poem, a capital city) | The early exit, with no search and no news |
+| market | 4 | The news branch running next to RAG |
+| decision | 5: four conflicts and one allowed case | The policy comparator and the risk scorer, with both outcomes of the verdict |
+| out_of_scope | 3 | The early exit, with no search and no news |
 
 The chat route (questions about the conversation) and follow-ups are covered by unit tests with a stubbed LLM, not by this set. Each question has a label for the expected route and keywords the answer must contain, and decisions also have an expected verdict.
 
@@ -126,7 +126,9 @@ The chat route (questions about the conversation) and follow-ups are covered by 
 
 **What the small model could not do.** In the first full run the local model did not recognise a single decision question as a decision. It labelled all five as lookups, so the policy check and risk score never ran, and rewording the prompt did not help. The fix is a regular expression for clear phrasings ("should we", "can we", "is it OK to", "we are considering"), applied before the LLM. This is a workaround for the small model. A larger, production-grade LLM is expected to classify these questions reliably from the prompt alone, and the rule could then be dropped or kept as a cheap shortcut.
 
-Two cases are marked as misses. In one, the half-year performance price came back wrong (51.4 instead of 43.6). The critic cannot catch that: it proves the number exists in the text, not that it answers the question. In the other, "who are the company's competitors" went to the chat path instead of the market path. The answer was right, but my label said market, so it counts against routing. Two other labels were corrected after I checked them against the PDFs: the UK share of revenue (25% from the newer annual report, not 26% from an older tax document) and a headquarters move, where `conflict` is right because the articles of association fix the registered office in Aarhus.
+Each of the first two measures has one miss, and they are different questions, so two questions are affected in total. The answer-correctness miss: the half-year performance price came back w
+rong (51.4 instead of 43.6). That question was routed correctly, but the critic cannot catch the error: it proves the number exists in the text, not that it answers the question. The routing
+miss: "who are the company's competitors" went to the chat path instead of the market path. The answer was right, but my label said market, so it counts against routing only.
 
 Other tests:
 
@@ -150,8 +152,8 @@ Run B by route: single-fact lookups 60 to 130 s, market 162 s, decisions 145 s, 
 
 Two ways to speed it up, not yet done:
 
-1. Cut the output of the short JSON steps (rewrite, planner, grade). They are about 40% of the LLM time.
-2. Cache LLM replies. They are deterministic at temperature 0, so a repeated prompt costs nothing.
+1. Cut the output of the short JSON steps (rewrite, planner, grade). They are about 40% of the LLM time. I did not do it because a hard token cap could cut off the model's hidden reasoning, and the planner would then fall back to lookup and mis-route questions. It has to be checked against the 20-question evaluation first.
+2. Cache LLM replies. They are deterministic at temperature 0, so a repeated prompt costs nothing. I did not do it because the test questions are all different, so the load test would not show a gain. It helps in real use, where questions repeat.
 
 ## Run it
 
@@ -208,20 +210,18 @@ python load_test.py a         load test with the dummy LLM (b: real model, c: es
 - The evaluation sets are small and I wrote the labels myself.
 - The news is a snapshot, and sentiment is scored on headlines only. FinBERT measures financial tone, not risk to the company.
 - The risk weights are set by hand, not learned.
-- The chat remembers the last four exchanges, and only in the browser session.
 
 ## What I would do without the time and resource limits
 
 The choices above were shaped by a few weeks of work and one ordinary machine. With more of both, these are the changes I would make, in rough order of value.
 
-1. **A bigger, production-level LLM.** This is the most important one. A larger model (a hosted frontier model or a 30B+ open model on a GPU) would remove most of the weak spots at once: it would classify decision questions without the regular expression, read financial tables more reliably, keep citations in every sub-answer, and generate many times faster. Latency would drop from minutes to seconds, and the load test could then run the full 50 to 200 queries against the real model.
+1. **A bigger, production-level LLM.** A larger model (a hosted frontier model or a 30B+ open model on a GPU) would remove most of the weak spots at once: it would classify decision questions without the regular expression, read financial tables more reliably, keep citations in every sub-answer, and generate many times faster. Latency would drop from minutes to seconds, and the load test could then run the full 50 to 200 queries against the real model.
 2. **Compare more designs, with bigger evaluation sets.** I tested two chunkers and two embedding models on 20 questions. I would add hybrid search (keyword plus vector), a cross-encoder reranker, more embedding models, other chunk sizes, and a self-check step where the model rechecks its own answer. I would build 100+ questions, labelled by more than one person, so that small differences become measurable and the labels are not only my own.
 3. **Better handling of tables.** Use table-aware PDF extraction for the financial statements, which would address the main source of wrong numbers.
 4. **A model-based decision classifier and an answer judge.** Replace the regular expression with a dedicated short classification call, and add an LLM judge that checks whether a figure actually answers the question, which the current critic cannot do.
-5. **Live news with article text.** Use a real news API that returns article bodies, score sentiment on the text rather than the headline, and tune a model for risk to the company instead of financial tone.
+5. **Live news with article text. (and addition of social media scraper API)** Use a real news API that returns article bodies, score sentiment on the text rather than the headline, and tune a model for risk to the company instead of financial tone.
 6. **Learn the risk weights.** Fit the scorer's weights from reviewed past decisions, with feedback from compliance staff, instead of expert-set values.
-7. **Speed and scale.** Cap the output of the short JSON steps, cache LLM replies, serve the model with a batching server (for example vLLM) so several users can be handled at once, and split the app into a UI and an API container.
-8. **Product features.** Stored conversations, document upload with automatic re-indexing, user accounts, and a newest-version preference when a question names no year.
+7. **Product features.** Stored conversations, document upload with automatic re-indexing, user accounts, and a newest-version preference when a question names no year.
 
 ## Where things are
 
